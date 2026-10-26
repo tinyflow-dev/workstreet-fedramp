@@ -1,5 +1,5 @@
 import type { APIRoute } from 'astro';
-import { advisorInfo } from '@/data/advisor-info';
+import { advisorInfo } from '../data/advisor-info';
 
 export const GET: APIRoute = async () => {
   return new Response(JSON.stringify(advisorInfo, null, 2), {
